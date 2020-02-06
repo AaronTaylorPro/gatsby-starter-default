@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import "../css/header.module.scss"
+import "../css/header.scss"
 
 const Header = ({ siteTitle }) => (
   <header

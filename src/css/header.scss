@@ -1,12 +1,13 @@
+
+$logoWidth: 250px;
+
 .container {
-  background:red;
   ul {
     display: grid;
-    grid-template-columns:repeat(3, 1fr) 250px repeat(3, 1fr);
+    grid-template-columns:repeat(3, 1fr) $logoWidth repeat(3, 1fr);
     grid-gap: 10px;
     li {
         list-style: none;
-        background:green;
         padding:20px;
     }
   }
