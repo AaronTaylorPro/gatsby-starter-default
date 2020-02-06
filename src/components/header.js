@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => (
       <li class="navItem link"><Link to="/page-2/">Vision</Link></li>
       <li class="navItem link"><Link to="/page-2/">Goals</Link></li>
       <li class="navItem logo">
-        <h1 style={{ margin: 0 }}>
+      
           <Link
             to="/"
             style={{
@@ -33,7 +33,7 @@ const Header = ({ siteTitle }) => (
           >
             {siteTitle}
           </Link>
-        </h1>
+    
       </li>
       <li  class="navItem link"><Link to="/page-2/">Work</Link></li>
       <li  class="navItem link"><Link to="/page-2/">Pricing</Link></li>

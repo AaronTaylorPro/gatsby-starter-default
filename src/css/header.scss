@@ -5,6 +5,7 @@ $logoWidth: 250px;
   ul {
     display: grid;
     grid-template-columns:repeat(3, 1fr) $logoWidth repeat(3, 1fr);
+    justify-items: center;
     grid-gap: 10px;
     li {
         list-style: none;
