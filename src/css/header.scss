@@ -1,15 +1,41 @@
 
 $logoWidth: 250px;
-
+header { margin-top:-3vh;}
 .container {
   ul {
     display: grid;
     grid-template-columns:repeat(3, 1fr) $logoWidth repeat(3, 1fr);
     justify-items: center;
+    align-items:center;
     grid-gap: 10px;
     li {
         list-style: none;
         padding:20px;
+        font-family:'Droid Sans';
+        a {
+          text-decoration: none;
+          color:#999;
+          transition: all 0.2s;
+        }
+    }
+    :hover {
+      a {
+        color:#444
+      }
+    }
+    li.link {
+      text-transform: uppercase;
+      font-size:0.7rem;
+    }
+    li.logo {
+      font-family:'Reenie Beanie';
+      font-size:2.7rem;
+      min-width: 15rem;
+    
     }
   }
+}
+
+path {
+  fill: transparent;
 }
