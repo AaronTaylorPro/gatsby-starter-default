@@ -24,13 +24,18 @@ const Header = ({ siteTitle }) => (
       <li class="link"><Link to="/page-2/">Goals</Link></li>
       <li class="logo">
       
+          <Link
+            to="/"
+            style={{
+              color: `#555`,
+              textDecoration: `none`,
+            }}
+          >
+            AARON TAYLOR
+          </Link>
         
        
-          <svg viewBox="0 0 300 150">
-            <path id="c1" d="M 50 100 Q 150 50 250 100 " />
-            <text width="300" dangerouslySetInnerHTML={{__html: '<textPath xlink:href="#c1">Aaron Taylor</textPath>'}}>
-            </text>
-          </svg>
+      <span class="pro">.pro<span class="suffixWrapper"><span class="grammer">grammer</span><span class="designer">designer</span><span class="web">web</span><span class="designer">seo</span></span></span>
       </li>
       <li  class="link"><Link to="/page-2/">Work</Link></li>
       <li  class="link"><Link to="/page-2/">Pricing</Link></li>

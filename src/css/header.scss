@@ -1,6 +1,9 @@
 
-$logoWidth: 250px;
-header { margin-top:-3vh;}
+$logoWidth: 300px;
+body {
+  font-family:'Droid Sans';
+}
+header { margin-top:2vh;}
 .container {
   ul {
     display: grid;
@@ -26,12 +29,51 @@ header { margin-top:-3vh;}
     li.link {
       text-transform: uppercase;
       font-size:0.7rem;
+      margin-top:-10px;
     }
     li.logo {
       font-family:'Reenie Beanie';
       font-size:2.7rem;
-      min-width: 15rem;
-    
+      position:relative;
+      text-align: center;
+      .pro {
+        font-weight: bold;
+        font-size: 0.6rem;
+        color: #fff;
+        font-family: 'Droid Sans';
+        text-align: center;
+        float: right;
+        background: #c00;
+        padding: 0px 5px 0px 5px;
+        border-radius: 3px;
+        line-height: 16px;
+        margin-top: 10px;
+        z-index: 99999;
+        position: relative;
+        .grammer {
+          color:#fff;
+          opacity:0.5
+        }
+        .designer {
+          color:#fff;
+          opacity:0.5;
+          display:none;
+        }
+        .web {
+          color:#fff;
+          opacity:0.5;
+          display:none;
+        }
+        .seo {
+          color:#fff;
+          opacity:0.5;
+          display:none;
+        }
+        
+        
+        
+
+      }
     }
   }
 }
