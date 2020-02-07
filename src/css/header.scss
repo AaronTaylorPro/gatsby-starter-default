@@ -1,9 +1,33 @@
 
 $logoWidth: 300px;
+$fullscreen-logoWidth: 932px;
+$break-small: 320px;
+$break-large: 932px;
+
 body {
   font-family:'Droid Sans';
 }
-header { margin-top:2vh;}
+
+header { 
+  margin-top:2vh;
+  @media screen and (max-width: $break-large) {
+    display:none;
+  }
+}
+
+.hide-mobile {
+  @media screen and (max-width: $break-large) {
+    display:none;
+  }
+}
+
+.hide-desktop {
+  @media screen and (min-width: $break-large) {
+    display:none;
+  }
+}
+
+
 .container {
   ul {
     display: grid;
@@ -11,6 +35,10 @@ header { margin-top:2vh;}
     justify-items: center;
     align-items:center;
     grid-gap: 10px;
+    @media screen and (max-width: $break-large) {
+      grid-gap: 10px;
+      grid-template-columns:1fr;
+    }
     li {
         list-style: none;
         padding:20px;
@@ -30,54 +58,49 @@ header { margin-top:2vh;}
       text-transform: uppercase;
       font-size:0.7rem;
       margin-top:-10px;
+      opacity: 1;
+      transition: all .25s ease-in-out;
+      -moz-transition: all .25s ease-in-out;
+      -webkit-transition: all .25s ease-in-out;
+      visibility: visible;
+      white-space: nowrap;
+      @media screen and (max-width: $break-large) {
+        display:none;
+      }
+     
     }
+    li.burger-menu {
+      position: absolute;
+      top: 3.5vh;
+      right: 3.5vw;
+      font-size:2rem;
+    } 
     li.logo {
       font-family:'Reenie Beanie';
       font-size:2.7rem;
       position:relative;
       text-align: center;
+     
       .pro {
         font-weight: bold;
         font-size: 0.6rem;
         color: #fff;
         font-family: 'Droid Sans';
         text-align: center;
-        float: right;
+        float: none;
         background: #c00;
         padding: 0px 5px 0px 5px;
         border-radius: 3px;
         line-height: 16px;
-        margin-top: 10px;
+        margin-top: 35px;
         z-index: 99999;
-        position: relative;
+        position: absolute;
+        margin-left: -70px;
         .grammer {
           color:#fff;
           opacity:0.5
         }
-        .designer {
-          color:#fff;
-          opacity:0.5;
-          display:none;
-        }
-        .web {
-          color:#fff;
-          opacity:0.5;
-          display:none;
-        }
-        .seo {
-          color:#fff;
-          opacity:0.5;
-          display:none;
-        }
-        
-        
-        
-
       }
     }
   }
-}
-
-path {
-  fill: transparent;
 }

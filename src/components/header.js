@@ -2,6 +2,10 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import "../css/header.scss"
+import { IoIosMenu } from 'react-icons/io';
+
+
+
 
 const Header = ({ siteTitle }) => (
   <header
@@ -35,11 +39,12 @@ const Header = ({ siteTitle }) => (
           </Link>
         
        
-      <span class="pro">.pro<span class="suffixWrapper"><span class="grammer">grammer</span><span class="designer">designer</span><span class="web">web</span><span class="designer">seo</span></span></span>
+      <span class="pro">.pro<span class="suffixWrapper"><span class="grammer">grammer</span></span></span>
       </li>
       <li  class="link"><Link to="/page-2/">Work</Link></li>
       <li  class="link"><Link to="/page-2/">Pricing</Link></li>
       <li  class="link"><Link to="/page-2/">Contact</Link></li>
+      <li  class="burger-menu hide-desktop"><IoIosMenu /></li>
     </ul>
   
   
