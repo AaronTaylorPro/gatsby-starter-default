@@ -27,7 +27,6 @@ header {
   }
 }
 
-
 .container {
   ul {
     display: grid;
@@ -71,16 +70,16 @@ header {
     }
     li.burger-menu {
       position: absolute;
-      top: 3.5vh;
-      right: 3.5vw;
+      top: 1.5vh;
+      right: 1.5vw;
       font-size:2rem;
+      opacity:0.2
     } 
     li.logo {
       font-family:'Reenie Beanie';
       font-size:2.7rem;
       position:relative;
       text-align: center;
-     
       .pro {
         font-weight: bold;
         font-size: 0.6rem;
